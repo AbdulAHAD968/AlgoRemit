@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/money-exchange.png>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f97316" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="AlgoRemit - Revolutionizing global payments with blockchain technology. Send money globally with near-zero fees and instant settlement."
+    />
+    <meta name="keywords" content="remittance, blockchain, Algorand, money transfer, cryptocurrency, USDCa" />
+    <meta name="author" content="AlgoRemit" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://algoremit.vercel.app/" />
+    <meta property="og:title" content="AlgoRemit - Global Money Transfers Revolutionized" />
+    <meta
+      property="og:description"
+      content="Send money globally with near-zero fees and instant settlement using Algorand blockchain technology."
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://algoremit.vercel.app/" />
+    <meta property="twitter:title" content="AlgoRemit - Global Money Transfers Revolutionized" />
+    <meta
+      property="twitter:description"
+      content="Send money globally with near-zero fees and instant settlement using Algorand blockchain technology."
+    />
+
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome for additional icons if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <title>AlgoRemit - Global Money Transfers Revolutionized</title>
+
+    <!-- THE APPLICATION FAVICON IS DOWNLOADED FROM FLATICON, THE LINK IS ATTACHED BELOW FOR REFERENCE -->
+    <!-- <a href="https://www.flaticon.com/free-icons/money-exchange" title="money exchange icons">Money exchange icons created by Freepik - Flaticon</a> -->
+
+    <style>
+      /* Basic reset and global styles */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          'Roboto',
+          'Oxygen',
+          'Ubuntu',
+          'Cantarell',
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+          sans-serif;
+      }
+
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+
+      #root {
+        isolation: isolate;
+      }
+
+      /* Animation keyframes */
+      @keyframes orbFloat {
+        0%,
+        100% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        50% {
+          transform: translate(150px, -100px) rotate(360deg);
+        }
+      }
+
+      @keyframes particleFloat {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      /* Utility classes for animations */
+      .animate-orbFloat {
+        animation: orbFloat 20s infinite ease-in-out;
+      }
+
+      .animate-particleFloat {
+        animation: particleFloat 15s infinite ease-in-out;
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 1.2s ease-out forwards;
+      }
+
+      .animate-marquee {
+        display: inline-block;
+        animation: marquee 30s linear infinite;
+      }
+
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+
+      .rotate-x-2 {
+        transform: rotateX(2deg);
+      }
+
+      /* Loading screen styles */
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom right, #fffbeb, #fed7aa, #fb923c);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+
+      .loading-logo {
+        font-size: 3rem;
+        font-weight: 800;
+        background: linear-gradient(to right, #d97706, #ea580c, #c2410c);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 1.5rem;
+      }
+
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(251, 146, 60, 0.3);
+        border-radius: 50%;
+        border-top-color: #ea580c;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading screen that disappears when React app loads -->
+    <div id="loading-screen">
+      <div class="loading-logo">AlgoRemit</div>
+      <div class="loading-spinner"></div>
+    </div>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script>
+      // Hide loading screen when React app loads
+      window.addEventListener('load', function () {
+        setTimeout(function () {
+          const loadingScreen = document.getElementById('loading-screen')
+          if (loadingScreen) {
+            loadingScreen.style.opacity = '0'
+            setTimeout(() => loadingScreen.remove(), 500)
+          }
+        }, 1000)
+      })
+    </script>
+  </body>
+</html>
